@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             resultMessageId = R.string.incorrect_answer;
         if (currentIndex == questions.length - 1) {
             pointsTextView.setText("Zdobyte punkty: " + aquiredPoints);
+            aquiredPoints=0;
         }
         Toast.makeText(this, resultMessageId, Toast.LENGTH_SHORT).show();
     }
