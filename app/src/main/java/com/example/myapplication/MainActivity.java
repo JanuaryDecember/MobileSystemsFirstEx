@@ -43,10 +43,6 @@ public class MainActivity extends AppCompatActivity {
         int resultMessageId = 0;
         if (answerWasShown) {
             resultMessageId = R.string.answer_was_shown;
-            if (currentIndex == questions.length - 1) {
-                pointsTextView.setText("Zdobyte punkty: " + aquiredPoints);
-                aquiredPoints = 0;
-            }
         } else {
             if (userAnswer == correctAnswer) {
                 resultMessageId = R.string.correct_answer;
